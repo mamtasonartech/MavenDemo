@@ -4,6 +4,19 @@ public class Student {
 
     private String name;
     private int rollno;
+    private double marks;
+
+    public Student(double marks) {
+        this.marks = marks;
+    }
+
+    public double getMarks() {
+        return marks;
+    }
+
+    public void setMarks(double marks) {
+        this.marks = marks;
+    }
 
     public String getName() {
         return name;
@@ -21,9 +34,10 @@ public class Student {
         this.rollno = rollno;
     }
 
-    public Student(String name, int rollno) {
+    public Student(String name, int rollno,double marks) {
         this.name = name;
         this.rollno = rollno;
+        this.marks = marks;
     }
 
     @Override
@@ -31,6 +45,7 @@ public class Student {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", rollno=" + rollno +
+                ", marks=" + marks +
                 '}';
     }
 }

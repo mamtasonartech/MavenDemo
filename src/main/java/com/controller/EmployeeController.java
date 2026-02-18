@@ -10,7 +10,7 @@ public class EmployeeController {
 //        Student s1 = new Student("Mamta",101);
 //        System.out.println(s1);
 
-        System.out.println(Arrays.asList(new Student("Mamta",101),(new Student("Sanu",102))));
+        System.out.println(Arrays.asList(new Student("Mamta",101,90.0),(new Student("Sanu",102,100))));
 
 
     }
